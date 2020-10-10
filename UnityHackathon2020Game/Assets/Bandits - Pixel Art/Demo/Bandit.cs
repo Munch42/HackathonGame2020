@@ -54,35 +54,30 @@ public class Bandit : MonoBehaviour {
             transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
         // Move
-        if (isRunning)
-        {
-            m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y * runningMultiplier);
-        }
-        else
-        {
-            m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
-        }
+        m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
 
         //Set AirSpeed in animator
         m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
 
         // -- Handle Animations --
         //Death
-        if (Input.GetKeyDown("e")) {
-            if(!m_isDead)
+        if (Input.GetKeyDown("e"))
+        {
+            if (!m_isDead)
                 m_animator.SetTrigger("Death");
             else
                 m_animator.SetTrigger("Recover");
 
             m_isDead = !m_isDead;
         }
-            
+
         //Hurt
         else if (Input.GetKeyDown("q"))
             m_animator.SetTrigger("Hurt");
 
         //Attack
-        else if(Input.GetMouseButtonDown(0)) {
+        else if (Input.GetMouseButtonDown(0))
+        {
             m_animator.SetTrigger("Attack");
         }
 
@@ -100,8 +95,11 @@ public class Bandit : MonoBehaviour {
         }*/
 
         //Run
-        else if (Mathf.Abs(inputX) > Mathf.Epsilon)
+        else if (isRunning)
+        {
             m_animator.SetInteger("AnimState", 2);
+            m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y * runningMultiplier);
+        }
 
         //Combat Idle
         else if (m_combatIdle)

@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         ProcessInputs();
         Move();
+        Animate();
     }
 
     void ProcessInputs()
@@ -55,6 +56,23 @@ public class PlayerController : MonoBehaviour
         } else
         {
             rb.velocity = movementDirection * movementSpeed * baseMovementSpeed;
+        }
+    }
+
+    void Animate()
+    {
+        if(movementDirection != Vector2.zero)
+        {
+            animator.SetFloat("Horizontal", movementDirection.x);
+            animator.SetFloat("Vertical", movementDirection.y);
+        }
+        animator.SetFloat("Speed", movementSpeed);
+        if (isRunning)
+        {
+            animator.SetFloat("Running", 1f);
+        } else
+        {
+            animator.SetFloat("Running", 0f);
         }
     }
 }
