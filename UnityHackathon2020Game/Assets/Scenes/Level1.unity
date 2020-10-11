@@ -975,6 +975,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Switch
       objectReference: {fileID: 0}
+    - target: {fileID: 7585510644930037242, guid: 2fd07c28683af7749ad281ca4f9c10ef,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1346583239
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585510644930037242, guid: 2fd07c28683af7749ad281ca4f9c10ef,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7585510644930037243, guid: 2fd07c28683af7749ad281ca4f9c10ef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16626,6 +16636,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833010974439142264, guid: 336c4c8055808ea41b563d9188872e1a,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833010974439142264, guid: 336c4c8055808ea41b563d9188872e1a,
+        type: 3}
+      propertyPath: m_Mass
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833010974439142264, guid: 336c4c8055808ea41b563d9188872e1a,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833010974439142264, guid: 336c4c8055808ea41b563d9188872e1a,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7833010974439142267, guid: 336c4c8055808ea41b563d9188872e1a,
         type: 3}
