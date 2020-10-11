@@ -6,7 +6,7 @@ public class PedistolSpikes : MonoBehaviour
 {
     private SpriteRenderer sr;
     private Sprite up;
-    private bool switched = false;
+    [SerializeField] private bool switched = false;
     private BoxCollider2D bCollider;
 
     public bool invert = false;

@@ -14,25 +14,27 @@ public class SoundManagerScript : MonoBehaviour
         ObjectiveSound = Resources.Load<AudioClip>("Objective");
 
         audioSrc = GetComponent<AudioSource>();
-    }
+    }   
 
     // Update is called once per frame
     void Update()
     {
-        public static void PlaySound(string clip)
-        {
-            switch (clip)
-                {
-                case "Switch&Spike":
-                    audioSrc.PlayOneShot(SwitchSound);
-                    break;
-                case "Reset":
-                    audioSrc.PlayOneShot(ResetSound);
-                    break;
-                case "Objective":
-                    audioSrc.PlayOneShot(ObjectiveSound);
-                    break;
-            }
+       
+    }
+
+    public static void PlaySound(string clip)
+    {
+        switch (clip)
+            {
+            case "Switch&Spike":
+                audioSrc.PlayOneShot(SwitchSound);
+                break;
+            case "Reset":
+                audioSrc.PlayOneShot(ResetSound);
+                break;
+            case "Objective":
+                audioSrc.PlayOneShot(ObjectiveSound);
+                break;
         }
     }
 }
