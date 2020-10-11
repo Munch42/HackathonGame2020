@@ -1212,7 +1212,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You Have Repaired the Time Machine
+  m_Text: Time Machine Repaired!
 --- !u!222 &358930194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2146,9 +2146,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You are the first human to time travel successfully, but oh no! The time
-    machine broke. You must find all 5 parts in order to repair the time machine
-    and get back to the present!!
+  m_Text: After successfully traveling to the past, your time machine is damaged.
+    You must collect all 3 parts of your time machine, as well as 3 time crystals
+    to power your time machine!
 --- !u!222 &586511724
 CanvasRenderer:
   m_ObjectHideFlags: 0
