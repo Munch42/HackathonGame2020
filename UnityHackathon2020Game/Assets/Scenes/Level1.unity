@@ -2571,6 +2571,11 @@ PrefabInstance:
       propertyPath: doorSwitch
       value: 
       objectReference: {fileID: 1284840048}
+    - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
+        type: 3}
+      propertyPath: doorSwitch.Array.data[0]
+      value: 
+      objectReference: {fileID: 1284840048}
     - target: {fileID: 1028251093937424717, guid: ebd8d41f85cce684a91f471a9cec490d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2972,6 +2977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invert: 0
   down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
 --- !u!4 &895665862 stripped
@@ -17096,6 +17102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invert: 0
   down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
 --- !u!4 &1328505961 stripped
@@ -18478,6 +18485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invert: 0
   down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
 --- !u!4 &1768765093 stripped
@@ -18728,6 +18736,11 @@ PrefabInstance:
     - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
         type: 3}
       propertyPath: doorSwitch
+      value: 
+      objectReference: {fileID: 1284840048}
+    - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
+        type: 3}
+      propertyPath: doorSwitch.Array.data[0]
       value: 
       objectReference: {fileID: 1284840048}
     - target: {fileID: 1028251093937424717, guid: ebd8d41f85cce684a91f471a9cec490d,
