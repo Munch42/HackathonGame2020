@@ -5,6 +5,16 @@ using UnityEngine;
 public class Switch : MonoBehaviour
 {
     private bool switched = false;
+    private SpriteRenderer sr;
+    private Sprite off;
+
+    public Sprite on;
+
+    private void Start()
+    {
+        sr = gameObject.GetComponent<SpriteRenderer>();
+        off = sr.sprite;
+    }
 
     private void OnMouseOver()
     { 
@@ -14,12 +24,12 @@ public class Switch : MonoBehaviour
             if (switched)
             {
                 switched = false;
-                gameObject.transform.eulerAngles = new Vector3(0,0,0);
+                sr.sprite = off;
             }
             else
             {
                 switched = true;
-                gameObject.transform.eulerAngles = new Vector3(0, 0, -65);
+                sr.sprite = on;
 
             }
         }

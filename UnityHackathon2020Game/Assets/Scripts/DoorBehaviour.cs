@@ -6,7 +6,11 @@ using UnityEngine;
 public class DoorBehaviour : MonoBehaviour
 {
     private SpriteRenderer sr;
+    private Sprite up;
     private bool switched = false;
+    private BoxCollider2D bCollider;
+
+    public Sprite down;
 
     //Get reference to switch that will open the door
     public Switch doorSwitch;
@@ -16,6 +20,8 @@ public class DoorBehaviour : MonoBehaviour
     void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
+        up = sr.sprite;
+        bCollider = gameObject.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -28,11 +34,13 @@ public class DoorBehaviour : MonoBehaviour
         //else keep door closed
         if (switched)
         {
-            sr.enabled = false;
+            sr.sprite = down;
+            bCollider.enabled = false;
         }
         else
         {
-            sr.enabled = true;
+            sr.sprite = up;
+            bCollider.enabled = true;
         }
     }
 }
