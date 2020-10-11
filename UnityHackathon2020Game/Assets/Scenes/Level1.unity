@@ -17997,7 +17997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 349, y: -25}
+  m_AnchoredPosition: {x: 361, y: -25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625010632
@@ -19118,7 +19118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time Machine Parts Collectd: '
+  m_Text: 'Time Machine Parts Collected: '
 --- !u!222 &1958945520
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20047,6 +20047,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327526335285263489, guid: 3a337290b45fbab41b7ae96d1d273453,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6327526335285263502, guid: 3a337290b45fbab41b7ae96d1d273453,
         type: 3}
