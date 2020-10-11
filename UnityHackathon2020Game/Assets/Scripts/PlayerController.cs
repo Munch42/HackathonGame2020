@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 
     private int partCount = 0;
 
+    private bool clickable = false;
+
     [Header("Character Attributes:")]
     public float baseMovementSpeed = 2.0f;
     public float baseRunningSpeedMultiplier = 2.0f;
@@ -25,10 +27,19 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+            clickable = true;
+    }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        clickable = false;
+    }
+
+    public bool IsClickable()
+    {
+        return clickable;
     }
 
     public void IncreasePartCount()

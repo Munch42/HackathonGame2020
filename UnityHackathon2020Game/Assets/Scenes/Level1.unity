@@ -975,6 +975,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Switch
       objectReference: {fileID: 0}
+    - target: {fileID: 7585510644930037241, guid: 2fd07c28683af7749ad281ca4f9c10ef,
+        type: 3}
+      propertyPath: pc
+      value: 
+      objectReference: {fileID: 732577069}
     - target: {fileID: 7585510644930037242, guid: 2fd07c28683af7749ad281ca4f9c10ef,
         type: 3}
       propertyPath: m_SortingLayerID

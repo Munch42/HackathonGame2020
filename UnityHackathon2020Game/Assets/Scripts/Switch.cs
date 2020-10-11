@@ -8,6 +8,7 @@ public class Switch : MonoBehaviour
     private SpriteRenderer sr;
     private Sprite off;
 
+    public PlayerController pc;
     public Sprite on;
 
     private void Start()
@@ -17,20 +18,23 @@ public class Switch : MonoBehaviour
     }
 
     private void OnMouseOver()
-    { 
-        //if object is clicked, change rotation and value of switched
-        if (Input.GetMouseButtonDown(0))
+    {
+        if (pc.IsClickable())
         {
-            if (switched)
+            //if object is clicked, change rotation and value of switched
+            if (Input.GetMouseButtonDown(0))
             {
-                switched = false;
-                sr.sprite = off;
-            }
-            else
-            {
-                switched = true;
-                sr.sprite = on;
+                if (switched)
+                {
+                    switched = false;
+                    sr.sprite = off;
+                }
+                else
+                {
+                    switched = true;
+                    sr.sprite = on;
 
+                }
             }
         }
     }
