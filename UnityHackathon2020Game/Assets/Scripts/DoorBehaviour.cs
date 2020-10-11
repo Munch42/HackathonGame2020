@@ -15,7 +15,7 @@ public class DoorBehaviour : MonoBehaviour
     public bool ignoreSwitchOff = false;
 
     //Get reference to switch that will open the door
-    public Switch doorSwitch;
+    public List<Switch> doorSwitch;
     
 
     // Start is called before the first frame update
@@ -29,13 +29,22 @@ public class DoorBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool isSwitched = false;
+        foreach(Switch item in doorSwitch){
+            if(item.isSwitched() && !isSwitched){
+                isSwitched = true;
+            } else if(item.isSwitched()) {
+                isSwitched = false;
+            }
+        }
+
         //see if switch has been switched
         if(!ignoreSwitchOff){
-            switched = doorSwitch.isSwitched();
-        } else if(ignoreSwitchOff && doorSwitch.isSwitched()){
+            switched = isSwitched;
+        } else if(ignoreSwitchOff && isSwitched){
             switched = false;
-        } else if(ignoreSwitchOff && !doorSwitch.isSwitched()){
-            switched = true;
+        } else if(ignoreSwitchOff && !isSwitched){
+            switched = true;    
         }
 
         //if door is open, hide from veiw
