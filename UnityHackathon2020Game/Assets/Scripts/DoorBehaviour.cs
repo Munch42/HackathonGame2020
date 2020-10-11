@@ -7,10 +7,12 @@ public class DoorBehaviour : MonoBehaviour
 {
     private SpriteRenderer sr;
     private Sprite up;
-    private bool switched = false;
+    [SerializeField] private bool switched = false;
     private BoxCollider2D bCollider;
 
     public Sprite down;
+
+    public bool ignoreSwitchOff = false;
 
     //Get reference to switch that will open the door
     public Switch doorSwitch;
@@ -28,7 +30,13 @@ public class DoorBehaviour : MonoBehaviour
     void Update()
     {
         //see if switch has been switched
-        switched = doorSwitch.isSwitched();
+        if(!ignoreSwitchOff){
+            switched = doorSwitch.isSwitched();
+        } else if(ignoreSwitchOff && doorSwitch.isSwitched()){
+            switched = false;
+        } else if(ignoreSwitchOff && !doorSwitch.isSwitched()){
+            switched = true;
+        }
 
         //if door is open, hide from veiw
         //else keep door closed

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
-    private bool switched = false;
+    [SerializeField] private bool switched = false;
     private SpriteRenderer sr;
     private Sprite off;
 
