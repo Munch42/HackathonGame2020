@@ -3192,6 +3192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  switched: 0
   invert: 0
   down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
@@ -16871,7 +16872,7 @@ PrefabInstance:
     - target: {fileID: 7833010974439142264, guid: 336c4c8055808ea41b563d9188872e1a,
         type: 3}
       propertyPath: m_Mass
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7833010974439142264, guid: 336c4c8055808ea41b563d9188872e1a,
         type: 3}
@@ -17317,6 +17318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  switched: 0
   invert: 0
   down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
@@ -18701,6 +18703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  switched: 0
   invert: 0
   down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
