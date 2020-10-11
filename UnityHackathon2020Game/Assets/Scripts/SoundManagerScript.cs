@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class SoundManagerScript : MonoBehaviour
 {
-    public static AudioClip SwitchSound, ResetSound, ObjectiveSound;
+    public static AudioClip SwitchSound, ResetSound, ObjectiveSound, DeniedSound;
     static AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
     {
-        SwitchSound = Resources.Load<AudioClip>("Switch&Spike");
+        SwitchSound = Resources.Load<AudioClip>("Switch");
         ResetSound = Resources.Load<AudioClip>("Reset");
         ObjectiveSound = Resources.Load<AudioClip>("Objective");
+        DeniedSound = Resources.Load<AudioClip>("Denied");
 
         audioSrc = GetComponent<AudioSource>();
     }   
@@ -25,7 +26,7 @@ public class SoundManagerScript : MonoBehaviour
         {
             switch (clip)
                 {
-                case "Switch&Spike":
+                case "Switch":
                     audioSrc.PlayOneShot(SwitchSound);
                     break;
                 case "Reset":
@@ -34,6 +35,9 @@ public class SoundManagerScript : MonoBehaviour
                 case "Objective":
                     audioSrc.PlayOneShot(ObjectiveSound);
                     break;
+            case "Denied":
+                audioSrc.PlayOneShot(DeniedSound);
+                break;
             }
         }
 }

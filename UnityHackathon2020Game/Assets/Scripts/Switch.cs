@@ -27,6 +27,7 @@ public class Switch : MonoBehaviour
         //if object is clicked, change rotation and value of switched
         if (Input.GetMouseButtonDown(0) && Physics2D.OverlapCircle(this.transform.position, overlapRadius, mask))
         {
+            SoundManagerScript.PlaySound("Switch");
             if (switched)
             {
                 switched = false;

@@ -24,9 +24,12 @@ public class ResetPoint : MonoBehaviour
     {
         if (Input.GetKeyDown(resetNumber) && resetTotalAmount > 0)
         {
+            SoundManagerScript.PlaySound("Reset");
             player.transform.position = this.transform.position;
             resetTotalAmount -= 1;
-        } else if(Input.GetKeyDown(resetNumber))
+        }
+        else if (Input.GetKeyDown(resetNumber))
+            SoundManagerScript.PlaySound("Denied");
         {
             // Do something here when the player wants to reset but has used all their reset points.
         }
