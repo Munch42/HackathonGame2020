@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d70e2e180eb31914d86ceb5bce8da5ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseMovementSpeed: 2
-  baseRunningSpeedMultiplier: 2
+  baseMovementSpeed: 3
+  baseRunningSpeedMultiplier: 3
   totalResets: 3
   movementDirection: {x: 0, y: 0}
   movementSpeed: 0
