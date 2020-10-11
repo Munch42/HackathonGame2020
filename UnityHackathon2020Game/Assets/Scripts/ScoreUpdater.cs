@@ -19,6 +19,6 @@ public class ScoreUpdater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = pc.GetScore().ToString() + "/5";
+        score.text = pc.GetScore().ToString() + "/3";
     }
 }

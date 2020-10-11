@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: -1346583239
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1229118688445786722, guid: c276fccb1e34b504d8d59eb7f60579c3,
+  m_Sprite: {fileID: -8281492209721898933, guid: 69f8d754e5331e04c95c40394724a383,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ca8e105ba398e4692f193feaa727a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  down: {fileID: 7478756771949720248, guid: c276fccb1e34b504d8d59eb7f60579c3, type: 3}
+  down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   doorSwitch: {fileID: 0}
 --- !u!61 &1028251093937424716
 BoxCollider2D:

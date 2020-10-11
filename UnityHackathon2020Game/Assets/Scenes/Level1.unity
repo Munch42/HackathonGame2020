@@ -1197,7 +1197,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You Made It Back to the Present!!
+  m_Text: You Have Repaired the Time Machine
 --- !u!222 &358930194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2957,7 +2957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  down: {fileID: 7478756771949720248, guid: c276fccb1e34b504d8d59eb7f60579c3, type: 3}
+  down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
 --- !u!4 &895665862 stripped
 Transform:
@@ -17061,7 +17061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  down: {fileID: 7478756771949720248, guid: c276fccb1e34b504d8d59eb7f60579c3, type: 3}
+  down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
 --- !u!4 &1328505961 stripped
 Transform:
@@ -18443,7 +18443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d9d8d279a1f0044b7d89c249d65d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  down: {fileID: 7478756771949720248, guid: c276fccb1e34b504d8d59eb7f60579c3, type: 3}
+  down: {fileID: -8234565606549808876, guid: 69f8d754e5331e04c95c40394724a383, type: 3}
   pedistol: {fileID: 2005000692}
 --- !u!4 &1768765093 stripped
 Transform:
