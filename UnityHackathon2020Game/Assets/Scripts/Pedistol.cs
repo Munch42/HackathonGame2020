@@ -12,6 +12,7 @@ public class Pedistol : MonoBehaviour
     {
         if (collision.Equals(barrel.GetComponent<BoxCollider2D>()))
         {
+            SoundManagerScript.PlaySound("Switch");
             isPressed = true;
         }
         
@@ -21,6 +22,7 @@ public class Pedistol : MonoBehaviour
     {
         if (collision.Equals(barrel.GetComponent<BoxCollider2D>()))
         {
+            SoundManagerScript.PlaySound("Switch");
             isPressed = false;
         }
     }

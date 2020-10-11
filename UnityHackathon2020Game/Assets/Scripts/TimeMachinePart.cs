@@ -17,6 +17,7 @@ public class TimeMachinePart : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        SoundManagerScript.PlaySound("Objective");
         pc.IncreasePartCount();
         Destroy(gameObject);
     }
