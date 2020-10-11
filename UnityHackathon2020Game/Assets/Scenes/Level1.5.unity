@@ -333,6 +333,11 @@ PrefabInstance:
       propertyPath: ignoreSwitchOff
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
+        type: 3}
+      propertyPath: doorSwitch.Array.data[0]
+      value: 
+      objectReference: {fileID: 2125605120}
     - target: {fileID: 1028251093937424717, guid: ebd8d41f85cce684a91f471a9cec490d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -630,6 +635,11 @@ PrefabInstance:
       propertyPath: ignoreSwitchOff
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
+        type: 3}
+      propertyPath: doorSwitch.Array.data[0]
+      value: 
+      objectReference: {fileID: 2125605120}
     - target: {fileID: 1028251093937424717, guid: ebd8d41f85cce684a91f471a9cec490d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -714,6 +724,11 @@ PrefabInstance:
       propertyPath: ignoreSwitchOff
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
+        type: 3}
+      propertyPath: doorSwitch.Array.data[0]
+      value: 
+      objectReference: {fileID: 2125605120}
     - target: {fileID: 1028251093937424717, guid: ebd8d41f85cce684a91f471a9cec490d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -857,6 +872,11 @@ PrefabInstance:
       propertyPath: doorSwitch
       value: 
       objectReference: {fileID: 2125605120}
+    - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
+        type: 3}
+      propertyPath: doorSwitch.Array.data[0]
+      value: 
+      objectReference: {fileID: 2125605120}
     - target: {fileID: 1028251093937424717, guid: ebd8d41f85cce684a91f471a9cec490d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -977,7 +997,7 @@ Transform:
   - {fileID: 410001383}
   - {fileID: 2059614610}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &943409850
 PrefabInstance:
@@ -994,6 +1014,11 @@ PrefabInstance:
     - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
         type: 3}
       propertyPath: doorSwitch
+      value: 
+      objectReference: {fileID: 2125605120}
+    - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
+        type: 3}
+      propertyPath: doorSwitch.Array.data[0]
       value: 
       objectReference: {fileID: 2125605120}
     - target: {fileID: 1028251093937424717, guid: ebd8d41f85cce684a91f471a9cec490d,
@@ -1151,6 +1176,11 @@ PrefabInstance:
     - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
         type: 3}
       propertyPath: doorSwitch
+      value: 
+      objectReference: {fileID: 2125605120}
+    - target: {fileID: 1028251093937424707, guid: ebd8d41f85cce684a91f471a9cec490d,
+        type: 3}
+      propertyPath: doorSwitch.Array.data[0]
       value: 
       objectReference: {fileID: 2125605120}
     - target: {fileID: 1028251093937424717, guid: ebd8d41f85cce684a91f471a9cec490d,

@@ -9,6 +9,8 @@ public class PedistolSpikes : MonoBehaviour
     private bool switched = false;
     private BoxCollider2D bCollider;
 
+    public bool invert = false;
+
     public Sprite down;
 
     //Get reference to switch that will open the door
@@ -31,15 +33,28 @@ public class PedistolSpikes : MonoBehaviour
 
         //if door is open, hide from veiw
         //else keep door closed
-        if (switched)
-        {
-            sr.sprite = down;
-            bCollider.enabled = false;
-        }
-        else
-        {
-            sr.sprite = up;
-            bCollider.enabled = true;
+        if(!invert){
+            if (switched)
+            {
+                sr.sprite = down;
+                bCollider.enabled = false;
+            }
+            else
+            {
+                sr.sprite = up;
+                bCollider.enabled = true;
+            }
+        } else if(invert) {
+            if (switched)
+            {
+                sr.sprite = up;
+                bCollider.enabled = true;
+            }
+            else
+            {
+                sr.sprite = down;
+                bCollider.enabled = false;
+            }
         }
     }
 }
