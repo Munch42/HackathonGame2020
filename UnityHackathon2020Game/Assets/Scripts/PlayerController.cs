@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     public float baseMovementSpeed = 2.0f;
     public float baseRunningSpeedMultiplier = 2.0f;
 
+    [Header("Level Attributes:")]
+    public int totalResets = 1;
+
     [Space]
     [Header("Character Statistics:")]
     public Vector2 movementDirection;
@@ -74,5 +77,10 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("Running", 0f);
         }
+    }
+
+    public int GetTotalResets()
+    {
+        return totalResets;
     }
 }
