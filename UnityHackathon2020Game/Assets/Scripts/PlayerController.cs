@@ -37,6 +37,11 @@ public class PlayerController : MonoBehaviour
         Debug.Log(partCount);
     }
 
+    public int GetScore()
+    {
+        return partCount;
+    }
+
     // Update is called once per frame
     void Update()
     {
