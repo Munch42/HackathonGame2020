@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
             clickable = true;
     }
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     public bool IsClickable()
     {
         return clickable;
-    }
+    }*/
 
     public void IncreasePartCount()
     {
