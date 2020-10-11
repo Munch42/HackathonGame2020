@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    private int partCount = 0;
+
     [Header("Character Attributes:")]
     public float baseMovementSpeed = 2.0f;
     public float baseRunningSpeedMultiplier = 2.0f;
@@ -26,6 +29,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
 
+    }
+
+    public void IncreasePartCount()
+    {
+        partCount += 1;
+        Debug.Log(partCount);
     }
 
     // Update is called once per frame
